@@ -1,0 +1,20 @@
+<section class="contact-me" id="contact">
+  <div class="contact-me__container">
+      <h2 class="contact-me__title">Contáctame</h2>
+      <form action="post" class="contact-me__form" onsubmit="event.preventDefault()">
+          <div class="form__fieldset">
+              <label for="name" class="form__label">Nombre</label>
+              <input type="text" class="form__input" name="name" id="name" pattern="([a-z A-Z]{1,20})" required />
+          </div>
+          <div class="form__fieldset">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" name="email" id="email" class="form__input" required />
+          </div>
+          <div class="form__fieldset">
+              <label for="message" class="form__label">Mensaje</label>
+              <textarea name="message" id="message" class="form__message" required ></textarea>
+          </div>
+          <button class="form__btn">Enviar</button>
+      </form>
+  </div>
+</section>

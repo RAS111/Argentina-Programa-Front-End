@@ -1,1 +1,610 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+.header {
+  height: 100vh;
+  background-image: url(src/assets/images/header.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px;
+}
+
+.link__img {
+  width: 122px;
+  height: 48px;
+}
+
+i{
+  width: 36px;
+  height: 32px;
+  color: #FAFAFA;
+}
+
+.header__title {
+  text-align: center;
+  margin-top: 30vh;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+li {
+  list-style: none;
+}
+
+/* ABOUT ME */
+
+.about-me {
+  background-color: #141414;
+  color: #FFFFFF;
+}
+
+.about-me__container {
+  margin: 0;
+  padding: 0;
+}
+
+.about-me__img {
+  width: 380px;
+  height: 480px;
+  display:none;
+}
+
+.container__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 31px;
+  gap: 46px;
+}
+
+.info {
+  margin: 0;
+}
+
+.info__description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Education*/
+
+.education {
+  background-color: #FAFAFA;
+  padding: 40px;
+}
+
+.education__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.education__title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.education__info {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+/*Experience*/
+.experience {
+  padding: 40px;
+}
+
+.experience__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.experience__title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.experience__info {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+/*Skills*/
+
+.skills {
+  padding: 100px;
+}
+
+.skills__title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+
+.skills__container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills__logo {
+  width: 150px;
+  height: 100px;
+}
+
+/*SERVICES*/
+
+.services {
+  background-color: #FAFAFA;
+  padding: 70px 50px 20px 50px;
+}
+
+.services__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+
+.services__results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.services__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  gap: 20%;
+}
+
+.container__things{
+  width: 290px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.things__description{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*CONTACT ME*/
+.contact-me {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px 70px 0px;
+}
+
+.contact-me__form {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me__title {
+  color: #FAFAFA;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.form__label {
+  color: #FAFAFA;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  width: 335px;
+  height: 45px;
+  border: 3px solid #2C2C2C;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 27px;
+}
+
+.form__message {
+  width: 335px;
+  height: 113px;
+  border: 3px solid #2C2C2C;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form__btn {
+  background: #2C2C2C;
+  color: #DBDBDB;
+  border-radius: 4px;
+  width: 335px;
+  height: 45px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 70px;
+  border: none;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Footer */
+
+.footer__container {
+  background-color: #2C2C2C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 147px 89px 154px 89px;
+
+}
+
+.brand__img {
+  width: 197px;
+  height: 48px;
+}
+
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #DBDBDB;
+}
+
+.social-media__instagram {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.social-media__linkedin{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.instagram__link, .linkedin__link, .github__link {
+  color: #DBDBDB;
+  text-decoration: none;
+}
+
+
+.social-media__github {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      background-color: #141414;
+      transition: top 1s ease;
+      margin: 0;
+      padding: 0
+  }
+
+  .close__icon {
+      display: block;
+      position: absolute;
+      top: 35px;
+      right: 30px;
+      text-align: center;
+  }
+
+  .menu__item > a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+  }
+
+  .services__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      gap: 20%;
+  }
+
+}
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .header__nav {
+      padding: 30px 40px;
+  }
+
+  .menu {
+      display: flex;
+      gap: 20px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 36px;
+  }
+
+  a {
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+
+  .menu__icon {
+      display: none !important;
+  }
+
+  .menu__close {
+      display: none;
+  }
+
+  /* ABOUT ME*/
+
+  .about-me {
+      background-color: #FFFFFF;
+      padding: 58px 80px 0px 0px;
+  }
+
+  .about-me__container {
+      display: flex;
+  }
+
+  .container__info {
+      align-items: flex-start;
+      color: #000000;
+  }
+
+  .about-me__img {
+      display: inline;
+      width: 380px;
+      height: 480px;
+  }
+
+  /* SERVICES */
+
+  .services__header {
+      text-align: left;
+      padding: 200px 35px;
+      background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8) 78.73%);
+  }
+
+  .services {
+      padding: 100px 100px;
+  }
+
+  .services__results{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+
+  section > img {
+      width: 290px;
+      height: 173px;
+  }
+
+  /*Education*/
+
+  .education {
+      background-color: #FAFAFA;
+      padding: 100px;
+  }
+
+  .education__container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .education__title {
+      margin-top: 0;
+      margin-bottom: 56px;
+  }
+
+  .education__info {
+      /* width: 60%;
+      height: 60vh; */
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .institute__duration {
+      color: rgb(87, 85, 85);
+  }
+
+  /*Experience*/
+  .experience {
+      padding: 100px;
+  }
+
+  .experience__container{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center
+  }
+
+  .experience__title {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      margin-top: 0;
+      margin-bottom: 56px;
+  }
+
+  .experience__info {
+      padding: 0;
+      /* width: 70%;
+      height: 60vh; */
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .experience__duration {
+      color: rgb(87, 85, 85);
+  }
+
+  /* CONTACT ME */
+  .contact-me {
+      height: 102vh;
+  }
+
+  .contact-me__container {
+      display: flex;
+      gap: 70px;
+  }
+
+  .contact-me__form {
+      margin-top: 30px;
+  }
+
+  .contact-me__form {
+      margin-top: 30px;
+  }
+
+  /* FOOTER */
+  .footer__container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 104px 88px;
+  }
+
+  .footer__social-media {
+      align-items: flex-end;
+  }
+}
+
+@media (min-width: 1100px) {
+  .menu {
+      display: flex;
+      gap: 20px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+  }
+
+  /* ABOUT ME*/
+  .about-me {
+      padding: 58px 183px 0px 216px;
+
+  }
+}

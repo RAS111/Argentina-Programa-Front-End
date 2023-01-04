@@ -142,6 +142,7 @@ li {
 }
 
 .experience__info {
+  width: 100%;
   display: flex;
   align-content: center;
   flex-direction: column;

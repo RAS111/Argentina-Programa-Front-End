@@ -1,25 +1,25 @@
 <section class="education" id="education">
   <div class="education__container">
-      <div class="education__title">
-          <h2>Educación</h2>
+    <div class="education__title">
+      <h2>Educación</h2>
+    </div>
+    <div class="education__info" *ngFor="let education of educations">
+      <div class="education__name">
+        <h3>{{education.courseName}}</h3>
+        <!-- <h3>Argentina Programa</h3> -->
       </div>
-      <div class="education__info">
-          <div class="education__name">
-              <h3>Argentina Programa</h3>
-          </div>
-          <div class="education__institute">
-              <h4>Ministerio de Desarrollo Productivo</h4>
-              <p class="institute__duration">Febrero-2022 - Enero-2023</p>
-          </div>
-          <div class="education__description ">
-              <p>Argentina Programa es un curso avalado por el Ministerio de Desarrollo Productivo, la Cámara
-                  de la Industria Argentina del Software (CESSI) y el Instituto Nacional de Tecnología
-                  Industrial (INTI) que consta de dos partes, la primera #SeProgramar donde se adquieren los
-                  fundamentos básicos de la programación y #YoProgramo donde se profundizan los conocimientos
-                  y se adquieren las habilidades y herramientas necesarias para convertirse en programadores
-                  web full-stack junior.
-              </p>
-          </div>
+      <div class="education__institute">
+        <h4>{{education.instituteName}}</h4>
+        <!-- <h4>Ministerio de Desarrollo Productivo</h4> -->
+        <p class="institute__duration">{{education.startDate}} - {{education.endDate}}</p>
+        <!-- <p class="institute__duration">Febrero-2022 - Enero-2023</p> -->
       </div>
+      <div class="education__description">
+        <p>{{education.description}}</p>
+        <!-- <p>
+          Argentina Programa es un curso avalado por el Ministerio de Desarrollo Productivo, la Cámara de la Industria Argentina del Software (CESSI) y el Instituto Nacional de Tecnología Industrial (INTI) que consta de dos partes, la primera #SeProgramar donde se adquieren los fundamentos básicos de la programación y #YoProgramo donde se profundizan los conocimientos y se adquieren las habilidades y herramientas necesarias para convertirse en programadores web full-stack junior.
+        </p> -->
+      </div>
+    </div>
   </div>
 </section>
